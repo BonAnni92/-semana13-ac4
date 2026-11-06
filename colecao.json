@@ -29,7 +29,7 @@
               "  }",
               "  pm.response.to.have.jsonSchema(schema)",
               "}),",
-              "pm.test(\"O usuário possui um e-mail válido\", () => {",
+              "pm.test(\"Validação de email\", () => {",
               "  const usuario = pm.response.json()",
               "  pm.expect(usuario.email).to.be.a(\"string\")",
               "  pm.expect(usuario.email).to.include(\"@\")",
